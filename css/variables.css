@@ -1,0 +1,9 @@
+:root {
+  --bg-dark: #05010f;
+  --neon-blue: #00f6ff;
+  --neon-purple: #8a2eff;
+  --neon-pink: #ff2ec8;
+  --text-main: #eaeaff;
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --blur: blur(14px);
+}
