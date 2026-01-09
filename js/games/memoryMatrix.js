@@ -14,9 +14,22 @@ let pattern = [];
 let playerInput = [];
 let clickable = false;
 
-function createGrid(size = 4) {
+function createGrid() {
+  // Grid size увеличава се на всеки 3 нива (max 6x6)
+  let size = Math.min(4 + Math.floor(level / 3), 6);
+
   matrix.innerHTML = "";
   matrix.style.gridTemplateColumns = `repeat(${size}, 80px)`;
+
+  for (let i = 0; i < size * size; i++) {
+    const cell = document.createElement("div");
+    cell.classList.add("cell");
+    cell.dataset.index = i;
+    cell.addEventListener("click", () => handleClick(i, cell));
+    matrix.appendChild(cell);
+  }
+}
+
 
   for (let i = 0; i < size * size; i++) {
     const cell = document.createElement("div");
