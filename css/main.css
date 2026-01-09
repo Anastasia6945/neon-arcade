@@ -133,3 +133,38 @@ a {
   letter-spacing: 2px;
   box-shadow: 0 0 30px var(--neon-purple);
 }
+
+.memory-matrix {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#matrix {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  gap: 15px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cell.active {
+  background: var(--neon-blue);
+  box-shadow: 0 0 25px var(--neon-blue);
+}
+
+.cell.correct {
+  background: var(--neon-purple);
+}
+
+.cell.wrong {
+  background: crimson;
+}
