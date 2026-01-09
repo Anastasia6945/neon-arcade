@@ -1,3 +1,6 @@
+const correctSound = new Audio("../assets/sounds/correct.wav");
+const wrongSound = new Audio("../assets/sounds/wrong.wav");
+
 const levelDisplay = document.getElementById("levelDisplay");
 const scoreDisplay = document.getElementById("scoreDisplay");
 
