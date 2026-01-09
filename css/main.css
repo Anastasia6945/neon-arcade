@@ -168,3 +168,14 @@ a {
 .cell.wrong {
   background: crimson;
 }
+
+.game-stats {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  color: var(--neon-pink);
+  font-family: 'Orbitron';
+  font-size: 20px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 15px var(--neon-pink);
+}
