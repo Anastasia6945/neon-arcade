@@ -1,0 +1,9 @@
+neon-arcade/
+│
+├── index.html
+├── css/
+│   ├── variables.css
+│   ├── main.css
+│   └── animations.css
+└── assets/
+    └── images/
