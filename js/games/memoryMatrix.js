@@ -60,15 +60,37 @@ function handleClick(index, cell) {
 function checkProgress() {
   const current = playerInput.length - 1;
   if (playerInput[current] !== pattern[current]) {
-    alert("Wrong! Try again.");
-    resetGame();
-    return;
+  const cell = matrix.children[playerInput[current]];
+  cell.classList.add("wrong");
+  setTimeout(() => cell.classList.remove("wrong"), 600);
+
+  // Optional: sound effect
+  // wrongSound.play();
+
+  resetGame();
+  return;
+}
+
   }
 
   if (playerInput.length === pattern.length) {
-    alert("Level complete!");
-    level++;
-    resetGame();
+  // Animation: success glow на всички клетки
+  pattern.forEach(index => {
+    const cell = matrix.children[index];
+    cell.classList.add("correct");
+    setTimeout(() => cell.classList.remove("correct"), 600);
+  });
+
+  // Update score & level
+  score += pattern.length * 10;
+  scoreDisplay.textContent = `Score: ${score}`;
+
+  level++;
+  levelDisplay.textContent = `Level: ${level}`;
+
+  resetGame();
+}
+
   }
 }
 
