@@ -1,3 +1,8 @@
+const levelDisplay = document.getElementById("levelDisplay");
+const scoreDisplay = document.getElementById("scoreDisplay");
+
+let score = 0;
+
 const matrix = document.getElementById("matrix");
 const startBtn = document.getElementById("startGame");
 
