@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #12002f, var(--bg-dark));
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  backdrop-filter: var(--blur);
+  background: var(--glass-bg);
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 2px;
+}
+
+.logo span {
+  color: var(--neon-pink);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.navbar li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar li:hover {
+  color: var(--neon-blue);
+}
+
+.hero {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.hero h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 48px;
+  text-shadow: 0 0 20px var(--neon-purple);
+}
+
+.cta {
+  margin-top: 30px;
+  padding: 15px 40px;
+  background: transparent;
+  border: 2px solid var(--neon-blue);
+  color: var(--neon-blue);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: var(--neon-blue);
+  color: black;
+  box-shadow: 0 0 20px var(--neon-blue);
+}
+
+.games-preview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 80px;
+}
+
+.game-card {
+  height: 180px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--blur);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Orbitron';
+  border-radius: 16px;
+  transition: 0.4s;
+}
+
+.game-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 30px var(--neon-purple);
+}
