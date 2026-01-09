@@ -118,6 +118,13 @@ function resetGame() {
 startBtn.addEventListener("click", () => {
   startBtn.disabled = true;
   createGrid();
-  generatePattern(level + 2);
-  showPattern();
+  function generatePattern(count = level + 2) {
+  pattern = [];
+  const gridSize = Math.min(4 + Math.floor(level / 3), 6) ** 2;
+  while (pattern.length < count) {
+    const rand = Math.floor(Math.random() * gridSize);
+    if (!pattern.includes(rand)) pattern.push(rand);
+  }
+}
+
 });
