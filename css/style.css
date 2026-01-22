@@ -40,3 +40,19 @@ header nav {
 header nav, header .nav, header .menu {
   margin-left: 0 !important;
 }
+/* По-нормални разстояния в hero секцията */
+.hero h1 {
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.hero p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* Самият бутон в hero да не се качва нагоре */
+.hero .btn, .hero a.btn, .hero a {
+  margin-top: 10px;
+  display: inline-block;
+}
