@@ -23,3 +23,20 @@
   border-radius:12px;
   text-decoration:none;
 }
+/* 1) Подрежда header елементите вляво */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start !important;
+  gap: 20px;
+}
+
+/* 2) Ако nav-ът ти е отделен блок – да не се “бута” вдясно */
+header nav {
+  margin-left: 0 !important;
+}
+
+/* 3) Ако имаш някъде margin-left:auto; (което бута вдясно) – махаме го */
+header nav, header .nav, header .menu {
+  margin-left: 0 !important;
+}
