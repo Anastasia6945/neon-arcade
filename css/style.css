@@ -1,0 +1,25 @@
+.nav{
+  display:flex;
+  gap:12px;
+  padding:12px 16px;
+  position: sticky;
+  top:0;
+  z-index:999;
+  backdrop-filter: blur(10px);
+}
+
+.nav a{ text-decoration:none; }
+
+.container{
+  padding:24px 16px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:14px;
+  padding:10px 14px;
+  border-radius:12px;
+  text-decoration:none;
+}
